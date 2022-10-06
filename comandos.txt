@@ -1,0 +1,10 @@
+- criar projeto: symfony new nome_do_projeto
+- adiciona o grupo de comando para geradores de participantes: composer req make 
+- adiciona ORM doctrine: composer req orm 
+- levantar o servidor e liberar o terminal: symfony serve -d --no-tls
+- parar o servidor: symfony server:stop
+- criar entidade: symfony console make:entity
+- criar a migração: symfony console make:migration
+- gerar a migração: php bin/console doctrine:migrations:migrate || symfony console doctrine:migrations:migrate
+- gerar o controller: symfony console make:controller
+- adiciona o serializer: composer req serializer
